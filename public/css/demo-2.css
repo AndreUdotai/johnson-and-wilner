@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet');
+
+ :root {
+     --pbmit-global-color: #d90a2c;
+     --pbmit-secondary-color: #17161a;
+     --pbmit-light-color: #f8f8f8;
+     --pbmit-white-color:#ffffff;
+     --pbmit-blackish-color: #323a43;
+     --pbmit-link-color-normal: #17161a;
+     --pbmit-link-color-hover: #d90a2c;
+     --pbmit-global-color-rgb: rgb(217, 10, 44);
+     --pbmit-secondary-color-rgb:rgb(23, 22, 26);
+     --pbmit-responsive-breakpoint: 1200px;
+     --pbmit-body-typography-font-family: "Montserrat",Tahoma,Geneva,sans-serif;
+     --pbmit-body-typography-variant: regular;
+     --pbmit-body-typography-font-size: 15px;
+     --pbmit-body-typography-line-height: 1.6;
+     --pbmit-body-typography-color: #333333;
+     --pbmit-heading-typography-font-family: "Playfair Display",Arial,Helvetica,sans-serif;
+     --pbmit-heading-color: #17161a;
+     --pbmit-heading-font-variant: 700;
+     --pbmit-btn-typography-font-family: "Montserrat",Arial,Helvetica,sans-serif;
+     --pbmit-btn-typography-variant: regular;
+     --pbmit-btn-typography-font-size: 12px;
+     --pbmit-btn-typography-line-height: normal;
+	 --border-radius: 0px;
+}
+ 

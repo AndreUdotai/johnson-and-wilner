@@ -1,0 +1,44 @@
+/******************************
+INDEX:
+    00 - General
+    01 - Typography
+    02 - Text Color & Background Color
+    03 - Background Position & Size
+    04 - Helper class
+    05 - Social icons
+    06 - Header
+    07 - Bootstrap Overwrite 
+    08 - Swiper 
+    09 - Scroll To Top 
+    10 - Search Box
+******************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet');
+ 
+:root {
+     --pbmit-global-color: #cdba6d;
+     --pbmit-secondary-color: #42474c;
+     --pbmit-light-color: #f8f8f8;
+     --pbmit-white-color:#ffffff;
+     --pbmit-blackish-color: #323a43;
+     --pbmit-link-color-normal: #42474c;
+     --pbmit-link-color-hover:#cdba6d;
+     --pbmit-global-color-rgb:rgb(205, 186, 109);
+     --pbmit-secondary-color-rgb: rgb(66, 71, 76);
+     --pbmit-responsive-breakpoint: 1200px;
+     --pbmit-body-typography-font-family: "Montserrat",Tahoma,Geneva,sans-serif;
+     --pbmit-body-typography-variant: regular;
+     --pbmit-body-typography-font-size: 15px;
+     --pbmit-body-typography-line-height: 1.6;
+     --pbmit-body-typography-color: #666666;
+     --pbmit-heading-typography-font-family: "Playfair Display",Arial,Helvetica,sans-serif;
+     --pbmit-heading-color: #323a43;
+     --pbmit-heading-font-variant: 400;
+     --pbmit-btn-typography-font-family: "Montserrat",Arial,Helvetica,sans-serif;
+     --pbmit-btn-typography-variant: regular;
+     --pbmit-btn-typography-font-size: 12px;
+     --pbmit-btn-typography-line-height: normal;
+	 --border-radius: 0px;
+}
+ 

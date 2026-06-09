@@ -1,0 +1,68 @@
+<%- include('layouts/main', { 
+    title: 'Home',
+    content: `
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('/images/revolution/images/slider1-01.jpg'); background-size: cover; background-position: center; height: 85vh; display: flex; align-items: center; color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class="display-3 fw-bold">JOHNSON & WILNER LLP</h1>
+                        <p class="lead fs-3">At the Intersection of Law, Technology, and Business</p>
+                        <a href="/contacts" class="btn btn-primary btn-lg mt-3">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <div class="container my-5">
+            <h2 class="text-center mb-5">WHY CHOOSE US</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4>Legal Excellence Meets Technological Innovation</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>Strategic Insights for a Technologically Driven Legal Landscape</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>Integrating Expertise and Insight for Optimal Legal Solutions</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Practice Areas -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Practice Areas</h2>
+            <div class="row">
+                <!-- You can add more cards from original later -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/service/service-01.jpg" class="card-img-top" alt="Practice Area">
+                        <div class="card-body">
+                            <h5 class="card-title">Technology Policy</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other areas -->
+            </div>
+        </div>
+
+        <!-- Policy Papers & Blog Teaser -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Our Policy Papers & Recent Insights</h2>
+            <!-- Add cards from original index.html here -->
+        </div>
+
+        <!-- Clients / Stats -->
+        <div class="bg-light py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3"><h3>1257</h3><p>BUSINESS PARTNERS</p></div>
+                    <div class="col-md-3"><h3>850</h3><p>PROJECTS DONE</p></div>
+                    <div class="col-md-3"><h3>927</h3><p>CASES DISMISSED</p></div>
+                    <div class="col-md-3"><h3>251</h3><p>OFFICES IN WORLD</p></div>
+                </div>
+            </div>
+        </div>
+    ` 
+}) %>
