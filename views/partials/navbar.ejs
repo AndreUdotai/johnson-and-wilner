@@ -2,15 +2,20 @@
 <header class="site-header header-style-8">
     <div class="container-fluid g-0">
         <div class="site-header-menu d-flex align-items-center">
+
+            <!-- Logo -->
             <div class="site-branding">
                 <h1 class="site-title">
                     <a href="/">
-                        <img class="logo-img img-fluid" src="../../public/images/logo-llp.png"
-                            alt="Johnson & Wilner LLP Logo">
+                        <img class="logo-img img-fluid" 
+                             src="/images/uploads/Johnsonandwilne_main_Logo.png" 
+                             alt="Johnson & Wilner LLP Logo">
                     </a>
                 </h1>
             </div>
-            <div class="pbmit-menu-topbararea">
+
+            <div class="pbmit-menu-topbararea flex-grow-1">
+                <!-- Top Contact Bar -->
                 <div class="pre-header">
                     <div class="pbmit-pre-header-inner">
                         <div class="container">
@@ -19,31 +24,16 @@
                                     <ul class="top-contact">
                                         <li>
                                             <i class="pbmit-base-icon-location-pin"></i>
-                                            <span>Address: </span>Suite A10, Hawthorn Suites, 1 Uke Street, Garki 2 -
-                                            FCT
+                                            <span>Address: </span>Suite A10, Hawthorn Suites, 1 Uke Street, Garki 2 - FCT, Abuja
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="pbmit-table-cell pbmit-align-right">
                                     <div class="pbmit-social-links-wrapper">
                                         <ul class="social-icons">
-                                            <li class="pbmit-social-facebook">
-                                                <a class=" tooltip-top" target="_blank"
-                                                    href="https://www.facebook.com/">
-                                                    <i class="pbmit-base-icon-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="pbmit-social-twitter">
-                                                <a class=" tooltip-top" target="_blank" href="#">
-                                                    <i class="pbmit-base-icon-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="pbmit-social-linkedin">
-                                                <a class="tooltip-top" target="_blank"
-                                                    href="https://linkedin.com/company/johnsonandwilner" rel="noopener">
-                                                    <i class="pbmit-base-icon-linkedin"></i>
-                                                </a>
-                                            </li>
+                                            <!-- <li class="pbmit-social-facebook"><a target="_blank" href="#"><i class="pbmit-base-icon-facebook"></i></a></li> -->
+                                            <li class="pbmit-social-twitter"><a target="_blank" href="#"><i class="pbmit-base-icon-twitter"></i></a></li>
+                                            <li class="pbmit-social-linkedin"><a target="_blank" href="https://linkedin.com/company/johnsonandwilner"><i class="pbmit-base-icon-linkedin"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -51,95 +41,65 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Main Navigation -->
                 <div class="site-navigations d-flex justify-content-between">
                     <nav class="main-menu navbar-expand-xl navbar-light">
                         <div class="navbar-header">
-                            <!-- Toggle Button -->
-                            <button class="navbar-toggler" type="button">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pbmit-menu" aria-controls="pbmit-menu" aria-expanded="false">
                                 <i class="pbmit-attorco-icon-bars"></i>
                             </button>
                         </div>
+                        
                         <div class="pbmit-mobile-menu-bg"></div>
-                        <div class="collapse navbar-collapse clearfix show" id="pbmit-menu">
+                        
+                        <div class="collapse navbar-collapse clearfix" id="pbmit-menu">
                             <div class="pbmit-menu-wrap">
-                                <div class="pbmit-responsive-icons">
-                                    <div class="pbmit-header-search-btn">
-                                        <a href="#">
-                                            <i class="pbmit-base-icon-search-2"></i>
-                                        </a>
-                                    </div>
-                                </div>
                                 <ul class="navigation clearfix">
-                                    <li
-                                        class="dropdown {% if request.resolver_match.view_name == 'index' %}active{% endif %}">
-                                        <a href="{% url 'index' %}">Home</a>
-                                    </li>
-                                    <li
-                                        class="dropdown {% if request.resolver_match.view_name == 'about-us' %}active{% endif %}">
-                                        <a href="{% url 'about-us' %}">About Us</a>
-                                    </li>
-                                    <li
-                                        class="dropdown {% if request.resolver_match.view_name == 'policy-papers' %}active{% endif %}">
-                                        <a href="{% url 'policy-papers' %}">Policy Papers</a>
-                                    </li>
-                                    <li
-                                        class="dropdown {% if request.resolver_match.view_name == 'practice-areas' %}active{% endif %}">
-                                        <a href="{% url 'practice-areas' %}">Practice Areas</a>
-                                    </li>
-                                    <li
-                                        class="dropdown {% if request.resolver_match.view_name == 'blog' %}active{% endif %}">
-                                        <a href="{% url 'blog' %}">Blog</a>
-                                    </li>
-                                    <li
-                                        class="{% if request.resolver_match.view_name == 'contacts' %}active{% endif %}">
-                                        <a href="{% url 'contacts' %}">Contacts</a></li>
-                                    <li class="{% if request.resolver_match.view_name == 'faq' %}active{% endif %}"><a
-                                            href="{% url 'faq' %}">Faq</a></li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/about-us">About Us</a></li>
+                                    <li><a href="/policy-papers">Policy Papers</a></li>
+                                    <li><a href="/practice-areas">Practice Areas</a></li>
+                                    <li><a href="/news">Blog</a></li>
+                                    <li><a href="/contacts">Contacts</a></li>
+                                    <li><a href="/faq">Faq</a></li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
-                    <div class="pbmit-right-side">
-                        <div class="pbmit-header-search-btn d-none">
-                            <a href="#">
-                                <i class="pbmit-base-icon-search-2"></i>
-                            </a>
-                        </div>
-                        <div class="pbmit-header-btn d-none">
-                            <a class="pbmit-btn pbmit-btn-outline" href="{% url 'contacts' %}" title="">
-                                <span>CONSULTATION</span>
-                            </a>
-                        </div>
-                    </div>
+
+                    <!-- <div class="pbmit-right-side">
+                        <a class="pbmit-btn pbmit-btn-outline" href="/contacts">
+                            <span>CONSULTATION</span>
+                        </a>
+                    </div> -->
                 </div>
             </div>
+
+            <!-- Phone -->
             <div class="pbmit-header-left-area">
                 <div class="pbmit-header-phone-wrap">
-                    <a href="tel:0123888555">
+                    <a href="tel:+2348160051310">
                         <span class="pbmit-header-phone-wrap-inner">
                             <i class="pbmit-base-icon-phone-call-1"></i>
                             <span class="pbmit-phone-title">Have any Questions?</span>
-                            <span class="pbmit-phone-number">+2348160051310</span>
+                            <span class="pbmit-phone-number">+234 816 005 1310</span>
                         </span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid d-flex flex-column justify-content-center p-5" ,
-        style="background-image: url(../../static/revolution/images/slider-7-01.jpg); height: 700px;">
-        <h1 class="text-center text-white display-2">JOHNSON &amp; WILNER LLP</h1>
-        <p class="text-center text-white">At the Intersection of Law, Technology, and Business</p>
-        <p class="text-center text-white d-none">JOHNSON &amp; WILNER LLP is a dynamic and forward- thinking law firm
-            that specializes in business and technology law. The firm was established through the strategic merger of
-            four distinct law firms. This alliance was formed with the aim of expanding legal services and better
-            serving clients in the technology and technology-mediated ecosystem.</p>
-        <div class="d-flex justify-content-center">
-            <div class="pbmit-header-btn">
-                <a class="pbmit-btn pbmit-btn-outline" href="{% url 'contacts' %}" title="">
-                    <span>CONTACT US</span>
-                </a>
-            </div>
+
+    <!-- Hero Banner -->
+    <div class="container-fluid d-flex flex-column justify-content-center p-5 text-center" 
+         style="background-image: url('/revolution/images/slider-7-01.jpg'); height: 700px; background-size: cover;">
+        <h1 class="text-white display-2">JOHNSON & WILNER LLP</h1>
+        <p class="text-white lead">At the Intersection of Law, Technology, and Business</p>
+        <div class="mt-4">
+            <a class="pbmit-btn pbmit-btn-outline" href="/contacts">
+                <span>CONTACT US</span>
+            </a>
         </div>
     </div>
 </header>
