@@ -1,153 +1,331 @@
-<%- include('layouts/main', { 
-    title: 'Home',
-    content: `
-        <!-- Page Content -->
-        <div class="page-content demo-eight">
+<%- include('layouts/main', { title: 'Home' , content: ` <!-- Page Content -->
+    <!-- Hero Banner    -->
+    <div class="container-fluid d-flex flex-column justify-content-center p-5 text-center"
+        style="background-image: url('/revolution/images/slider-7-01.jpg'); height: 700px; background-size: cover;">
+        <h1 class="text-white display-2">JOHNSON & WILNER LLP</h1>
+        <p class="text-white lead">At the Intersection of Law, Technology, and Business</p>
+        <div class="mt-4">
+            <a class="pbmit-btn pbmit-btn-outline" href="/contacts">
+                <span>CONTACT US</span>
+            </a>
+        </div>
+    </div>
+    <div class="page-content demo-eight">
 
-            <!-- Service / Practice Areas Start -->
-            <section class="section-md pbmit-bg-color-blackish">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6">
-                            <div class="pbmit-heading-subheading-style-2 text-white">
-                                <h4 class="pbmit-subtitle">WHY CHOOSE US</h4>
-                                <h2 class="pbmit-title">Legal Excellence Meets Technological Innovation</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="row">
-                                <!-- First Row Practice Areas will go here later -->
-                            </div>
+        <!-- Service / Practice Areas Start -->
+        <section class="section-md pbmit-bg-color-blackish">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="pbmit-heading-subheading-style-2 text-white">
+                            <h4 class="pbmit-subtitle">WHY CHOOSE US</h4>
+                            <h2 class="pbmit-title">Legal Excellence Meets Technological Innovation</h2>
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- Second Row Practice Areas will go here later -->
-                    </div>
-                </div>
-            </section>
-            <!-- Service End -->
-
-            <!-- About Start -->
-            <section class="about-section-eight">
-                <div class="container">
-                    <div class="row g-2">
-                        <div class="col-md-6">
-                            <div class="about-eight-img-box">
-                                <div class="about-eight-first-img">
-                                    <figure>
-                                        <img src="/images/homepage-8/about-img1.png" class="img-fluid" alt="">
-                                    </figure>
-                                </div>
-                                <div class="about-eight-second-img">
-                                    <figure>
-                                        <img src="/images/homepage-8/about-img2.jpg" class="img-fluid" alt="">
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="about-eight-content">
-                                <div class="pbmit-heading-subheading-style-2">
-                                    <h4 class="pbmit-subtitle">WHY CHOOSE US</h4>
-                                    <h2 class="pbmit-title">Strategic Insights for a Technologically Driven Legal Landscape</h2>
-                                </div>
-                                <p>Johnson &amp; Wilner LLP offers a wide range of legal services, including advisory services, transactional, regulatory, and conflict resolution services, and litigation. The firm serves both public and private sector clients and international organizations.</p>
-                                
-                                <div class="row align-items-center">
-                                    <div class="col-md-7 pbmit-two-colum">
-                                        <ul class="list-group list-group-borderless">
-                                            <li class="list-group-item"><i class="themifyicon ti-check"></i> Transactional Services</li>
-                                            <li class="list-group-item"><i class="themifyicon ti-check"></i> Regulatory Services</li>
-                                            <li class="list-group-item"><i class="themifyicon ti-check"></i> Conflict Resolution Services</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-5 pbmit-two-colum">
-                                        <div class="about-eight-year-box">
-                                            <div class="pbmit-about-year">
-                                                <a href="#">since 2008</a>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="row">
+                            <!-- First Row Practice Areas will go here later -->
+                            <div class="col-md-6">
+                                <article class="pbmit-servicebox-style-7">
+                                    <div class="pbmit-post-item">
+                                        <div class="pbmit-box-content-inner">
+                                            <div class="pbmit-ihbox-icon">
+                                                <i
+                                                    class="pbmit-attorco-business-icon pbmit-attorco-business-icon-law-book"></i>
+                                            </div>
+                                            <div class="pbmit-pf-box-title">
+                                                <div class="pbmit-box-category d-none">
+                                                    <a href="{% url 'practice-areas' %}" rel="tag">Technology Policy</a>
+                                                </div>
+                                                <h3><a href="{% url 'practice-area' first_row_practice_area.id %}">Technology
+                                                        Policy</a>
+                                                </h3>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <a class="pbmit-btn pbmit-btn-global" href="/about-us">Read More <i class="themifyicon ti-arrow-right"></i></a>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="pbmit-servicebox-style-7">
+                                    <div class="pbmit-post-item">
+                                        <div class="pbmit-box-content-inner">
+                                            <div class="pbmit-ihbox-icon">
+                                                <i
+                                                    class="pbmit-attorco-business-icon pbmit-attorco-business-icon-law-book"></i>
+                                            </div>
+                                            <div class="pbmit-pf-box-title">
+                                                <div class="pbmit-box-category d-none">
+                                                    <a href="{% url 'practice-areas' %}" rel="tag">emerging tech</a>
+                                                </div>
+                                                <h3><a href="{% url 'practice-area' first_row_practice_area.id %}">Emerging
+                                                        Tech</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- About End -->
-
-            <!-- Policy Papers / Portfolio Start -->
-            <section class="portfolio-eight-bg">
-                <div class="container">
-                    <div class="pbmit-boxes-portfolio-style-2 pbmit-sortable-yes">
-                        <div class="portfolio-eight-heading">
-                            <div class="row d-flex justify-content-between">
-                                <div class="col-md-12 col-lg-4">
-                                    <div class="pbmit-heading-subheading-style-2 mb-0">
-                                        <h2 class="pbmit-title">Our Policy Papers</h2>
+                <div class="row">
+                    <!-- Second Row Practice Areas will go here later -->
+                    <div class="col-md-6 col-lg-3">
+                        <article class="pbmit-servicebox-style-7">
+                            <div class="pbmit-post-item">
+                                <div class="pbmit-box-content-inner">
+                                    <div class="pbmit-ihbox-icon">
+                                        <i class="pbmit-attorco-business-icon pbmit-attorco-business-icon-law-book"></i>
+                                    </div>
+                                    <div class="pbmit-pf-box-title">
+                                        <div class="pbmit-box-category d-none">
+                                            <a href="{% url 'practice-areas' %}" rel="tag">payment systems</a>
+                                        </div>
+                                        <h3><a href="{% url 'practice-area' second_row_practice_area.id %}">Payment
+                                                Systems</a></h3>
                                     </div>
                                 </div>
-                                <div class="col-md-12 col-lg-4">
-                                    <a href="/policy-papers"><h2 class="pbmit-title">More...</h2></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="pbmit-servicebox-style-7">
+                            <div class="pbmit-post-item">
+                                <div class="pbmit-box-content-inner">
+                                    <div class="pbmit-ihbox-icon">
+                                        <i class="pbmit-attorco-business-icon pbmit-attorco-business-icon-law-book"></i>
+                                    </div>
+                                    <div class="pbmit-pf-box-title">
+                                        <div class="pbmit-box-category d-none">
+                                            <a href="{% url 'practice-areas' %}" rel="tag">data governance</a>
+                                        </div>
+                                        <h3><a href="{% url 'practice-area' second_row_practice_area.id %}">Data
+                                                Governance</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="pbmit-servicebox-style-7">
+                            <div class="pbmit-post-item">
+                                <div class="pbmit-box-content-inner">
+                                    <div class="pbmit-ihbox-icon">
+                                        <i class="pbmit-attorco-business-icon pbmit-attorco-business-icon-law-book"></i>
+                                    </div>
+                                    <div class="pbmit-pf-box-title">
+                                        <div class="pbmit-box-category d-none">
+                                            <a href="{% url 'practice-areas' %}" rel="tag">business/commerce</a>
+                                        </div>
+                                        <h3><a
+                                                href="{% url 'practice-area' second_row_practice_area.id %}">Business/Commerce</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service End -->
+
+        <!-- About Start -->
+        <section class="about-section-eight">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-6">
+                        <div class="about-eight-img-box">
+                            <div class="about-eight-first-img">
+                                <figure>
+                                    <img src="/images/homepage-8/about-img1.png" class="img-fluid" alt="">
+                                </figure>
+                            </div>
+                            <div class="about-eight-second-img">
+                                <figure>
+                                    <img src="/images/homepage-8/about-img2.jpg" class="img-fluid" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-eight-content">
+                            <div class="pbmit-heading-subheading-style-2">
+                                <h4 class="pbmit-subtitle">WHY CHOOSE US</h4>
+                                <h2 class="pbmit-title">Strategic Insights for a Technologically Driven Legal Landscape
+                                </h2>
+                            </div>
+                            <p>Johnson &amp; Wilner LLP offers a wide range of legal services, including advisory
+                                services, transactional, regulatory, and conflict resolution services, and litigation.
+                                The firm serves both public and private sector clients and international organizations.
+                            </p>
+
+                            <div class="row align-items-center">
+                                <div class="col-md-7 pbmit-two-colum">
+                                    <ul class="list-group list-group-borderless">
+                                        <li class="list-group-item"><i class="themifyicon ti-check"></i> Transactional
+                                            Services</li>
+                                        <li class="list-group-item"><i class="themifyicon ti-check"></i> Regulatory
+                                            Services</li>
+                                        <li class="list-group-item"><i class="themifyicon ti-check"></i> Conflict
+                                            Resolution Services</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5 pbmit-two-colum">
+                                    <div class="about-eight-year-box">
+                                        <div class="pbmit-about-year">
+                                            <a href="#">since 2008</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="pbmit-btn pbmit-btn-global" href="/about-us">Read More <i
+                                    class="themifyicon ti-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About End -->
+
+        <!-- Why Choose Us Section -->
+        <section class="pbmit-bg-color-light" style="margin-top: 150px;">
+            <div class="container">
+                <div class="row">
+                    <!-- Left Content -->
+                    <div class="col-md-12 col-lg-7">
+                        <div class="why-choose-eight-content">
+                            <div class="pbmit-heading-subheading-style-2">
+                                <h4 class="pbmit-subtitle">WHY CHOOSE US</h4>
+                                <h2 class="pbmit-title">Integrating Expertise and Insight for Optimal Legal Solutions
+                                </h2>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="why-choose-eight-single-img">
+                                        <figure>
+                                            <img src="/images/homepage-8/img-01.jpg" class="img-fluid"
+                                                alt="Why Choose Us">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>JOHNSON &amp; WILNER LLP's Advisory Services are designed to provide clients with
+                                        strategic, legal advice that aligns with their business objectives. Our team of
+                                        experienced attorneys works closely with clients to understand their unique
+                                        needs and challenges and provides tailored advice to help them navigate complex
+                                        legal landscapes.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Policy papers cards will go here later -->
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="col-md-12 col-lg-5">
+                        <div class="why-choose-eight-img"></div>
                     </div>
                 </div>
-            </section>
-            <!-- Portfolio End -->
+            </div>
+        </section>
 
-            <!-- Counter Start -->
-            <section class="counter-eight-bg">
-                <div class="container">
-                    <div class="counter-eight-box">
-                        <div class="row text-center">
-                            <div class="col-md-6 col-lg-3">
-                                <div class="pbmit-fidbox-style-10">
-                                    <span class="numinate" data-from="0" data-to="1257">1257</span>
-                                    <h3>BUSINESS PARTNERS</h3>
+        <!-- Appoinment Start -->
+        <section class="appoinment-eight">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="appoinment-eight-img"></div>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="appoinment-eight-main">
+                            <div class="pbmit-ihbox-style-11">
+                                <div class="pbmit-ihbox-inner">
+                                    <div class="ts-ihbox-heading-with-icon">
+                                        <div class="pbmit-ihbox-icon">
+                                            <div class="pbmit-ihbox-icon-wrapper">
+                                                <i
+                                                    class="pbmit-attorco-business-icon pbmit-attorco-business-icon-call"></i>
+                                            </div>
+                                        </div>
+                                        <div class="pbmit-ihbox-heading">
+                                            <div class="pbmit-cta3-content-wrapper">Contact Us</div>
+                                            <div class="pbmit-vc_general pbmit-vc_cta3 pbmit-cta3-only">
+                                                <div class="pbmit-vc_cta3_content-container">
+                                                    <div class="pbmit-vc_cta3-content">
+                                                        <div class="pbmit-vc_cta3-content-header pbmit-wrap">
+                                                            <div class="pbmit-vc_cta3-headers pbmit-wrap-cell">
+                                                                <h2 class="pbmit-custom-heading">+234-816-005-1310<br>
+                                                                    <strong>OR </strong><br>
+                                                                    Schedule a Consultation
+                                                                </h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pbmit-ihbox-contents"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="pbmit-fidbox-style-10">
-                                    <span class="numinate" data-from="0" data-to="850">850</span>
-                                    <h3>PROJECTS DONE</h3>
+                            <form class="form-style-1">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-6">
+                                        <input type="text" name="your-name" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <input type="email" name="your-email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <input type="text" name="your-phone" class="form-control" placeholder="Phone">
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <input type="text" name="text-99" class="form-control" placeholder="Subject">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea name="message" cols="40" rows="4" class="form-control"
+                                            placeholder="Message" required=""></textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="pbmit-btn pbmit-btn-global w-100" type="submit"
+                                            value="SEND MESSAGE">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="pbmit-fidbox-style-10">
-                                    <span class="numinate" data-from="0" data-to="927">927</span>
-                                    <h3>CASES DISMISSED</h3>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="pbmit-fidbox-style-10">
-                                    <span class="numinate" data-from="0" data-to="251">251</span>
-                                    <h3>OFFICES IN WORLD</h3>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Counter End -->
+            </div>
+        </section>
+        <!-- Appoinment End -->
 
-            <!-- Blog Start -->
-            <section class="section-md">
-                <div class="container">
-                    <div class="blog-heading-subheading-style text-center">
-                        <h4 class="pbmit-subtitle">BLOG</h4>
-                        <h2 class="pbmit-title">Recent Blog Posts</h2>
-                    </div>
-                    <div class="row">
-                        <!-- Blog posts will go here later (dynamic or static) -->
+        <!-- Client Start -->
+        <section class="client-section-eight pbmit-bg-color-light">
+            <div class="container">
+                <div class="swiper-slider" data-loop="true" data-autoplay="true" data-dots="false" data-arrows="false"
+                    data-columns="5" data-margin="30" data-effect="slide">
+                    <div class="swiper-wrapper">
+                        <!-- {% for client in clients %} -->
+                        <div class="swiper-slide">
+                            <!-- Slide1 -->
+                            <div class="pbmit-client-logo-tooltip" data-tooltip="hey">
+                                <div class="pbmit-clientbox-style-1">
+                                    <span class="pbmit-item-thumbnail">
+                                        <span class="pbmit-item-thumbnail-inner">
+                                            <!-- <img src="/images/logo-llp-trans.png" class="img-fluid" alt="heyhye"> -->
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- {% endfor %} -->
                     </div>
                 </div>
-            </section>
-            <!-- Blog End -->
+            </div>
+        </section>
+        <!-- Client End -->
 
-        </div>
+    </div>
     `
-}) %>
+    }) %>
