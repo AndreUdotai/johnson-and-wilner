@@ -2036,3 +2036,7 @@ label.error {
     color: #999;
 }
 
+/* Custom override for phone number */
+.pbmit-phone-number {
+    font-size: 1.3rem !important;
+}
