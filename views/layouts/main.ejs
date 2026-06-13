@@ -1,12 +1,9 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>
-        <%= title %> | JOHNSON AND WILNER LLP
-    </title>
+    <title><%= title %> | JOHNSON AND WILNER LLP</title>
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +11,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/images/fevicon.png">
 
-    <!-- CSS -->
+    <!-- CSS Files -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/fontawesome.css">
     <link rel="stylesheet" href="/css/flaticon.css">
@@ -29,13 +26,12 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
 
-    <!-- REVOLUTION SLIDER -->
+    <!-- Revolution Slider -->
     <link rel="stylesheet" type="text/css" href="/revolution/rs6.css">
 </head>
-
 <body>
-    <div class="page-wrapper">
 
+    <div class="page-wrapper">
 
         <%- include('../partials/navbar') %>
 
@@ -44,74 +40,45 @@
         <%- include('../partials/footer') %>
 
     </div>
-
     <!-- page wrapper End -->
 
-    <!-- Search Box Start Here -->
+    <!-- Search Overlay -->
     <div class="pbmit-search-overlay">
         <div class="pbmit-icon-close"></div>
         <div class="pbmit-search-outer">
             <div class="pbmit-form-title">Hi, How Can We Help You?</div>
             <div class="pbmit-search-logo">
-                <img src="{% static " images/homepage-8/logo.png" %}" alt="">
+                <img src="/images/homepage-8/logo.png" alt="Johnson & Wilner LLP">
             </div>
-            <form class="pbmit-site-searchform" action="{% url 'search-bar' %}" method="get">
-                <input type="search" class="form-control field searchform-s" name="search_query"
-                    placeholder="Search Attorney, Blog Post, Policy Paper...">
+            <form class="pbmit-site-searchform" action="/search-bar" method="get">
+                <input type="search" class="form-control field searchform-s" 
+                       name="search_query" placeholder="Search Attorney, Blog Post, Policy Paper...">
                 <button type="submit">
                     <i class="pbmit-base-icon-search"></i>
                 </button>
             </form>
         </div>
     </div>
-    <!-- Search Box End Here -->
 
-    <!-- JS
-         ============================================ -->
-    <!-- jQuery JS -->
-    <!-- jQuery JS -->
+    <!-- JS Files -->
     <script src="/js/jquery.min.js"></script>
-
-    <!-- Popper JS -->
     <script src="/js/popper.min.js"></script>
-
-    <!-- Bootstrap JS -->
     <script src="/js/bootstrap.min.js"></script>
-
-    <!-- jquery Waypoints JS -->
     <script src="/js/jquery.waypoints.min.js"></script>
-
-    <!-- jquery Appear JS -->
     <script src="/js/jquery.appear.js"></script>
-
-    <!-- Numinate JS -->
     <script src="/js/numinate.min.js"></script>
-
-    <!-- Swiper JS -->
     <script src="/js/swiper.min.js"></script>
-
-    <!-- Magnific JS -->
     <script src="/js/jquery.magnific-popup.min.js"></script>
-
-    <!-- Circle Progress JS -->
     <script src="/js/circle-progress.js"></script>
-
-    <!-- AOS -->
     <script src="/js/aos.js"></script>
-
-    <!-- Isotope JS -->
     <script src="/js/isotope.pkgd.min.js"></script>
-
-    <!-- Scripts JS -->
     <script src="/js/scripts.js"></script>
 
-    <!-- Revolution JS -->
+    <!-- Revolution Slider JS -->
     <script src="/revolution/rslider.js"></script>
     <script src="/revolution/rbtools.min.js"></script>
     <script src="/revolution/rs6.min.js"></script>
 
-    <!-- Additional Bootstrap Bundle (if needed) -->
     <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

@@ -5,10 +5,6 @@ router.get('/', (req, res) => {
   res.render('index', { title: 'Home' });
 });
 
-router.get('/main', (req, res) => {
-  res.render('layouts/main', { title: 'Main' });
-});
-
 router.get('/about-us', (req, res) => {
   res.render('about-us', { title: 'About Us' });
 });

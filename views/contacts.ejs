@@ -1,0 +1,143 @@
+<%- include('layouts/main', { title: 'Contact Us' , content: ` <!-- Page Content -->
+
+<!-- Title Bar -->
+<div class="pbmit-title-bar-wrapper">
+    <div class="container">
+        <div class="pbmit-title-bar-content">
+            <div class="pbmit-title-bar-content-inner">
+                <div class="pbmit-tbar">
+                    <div class="pbmit-tbar-inner container">
+                        <h1 class="pbmit-tbar-title">Contacts</h1>
+                    </div>
+                </div>
+                <div class="pbmit-breadcrumb">
+                    <div class="pbmit-breadcrumb-inner">
+                        <span><a href="/" class="home"><span>JOHNSON &amp; WILNER LLP</span></a></span>
+                        <span class="sep"> > </span>
+                        <span><span class="post-root post post-post current-item">Contacts</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Page Content -->
+<div class="page-content">
+
+    <!-- Contact Info Boxes -->
+    <section class="contact-ihbox-section">
+        <div class="container">
+            <div class="contact-ihbox">
+                <div class="row g-0">
+                    <!-- Address -->
+                    <div class="col-md-4">
+                        <div class="pbmit-ihbox-style-4">
+                            <div class="pbmit-ihbox-inner">
+                                <div class="pbmit-ihbox-icon pbmit-icon-skincolor"></div>
+                                <div class="pbmit-ihbox-contents">
+                                    <h2 class="pbmit-custom-heading">Address</h2>
+                                    <div class="pbmit-cta3-content-wrapper">
+                                        Suite A10, Hawthorn Suites, 1 Uke Street, Garki 2 - FCT, Abuja
+                                        <!-- <p><a href="#">View On Google Map</a></p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="col-md-4">
+                        <div class="pbmit-ihbox-style-4 pbmit-textcolor-white">
+                            <div class="pbmit-ihbox-inner">
+                                <div class="pbmit-ihbox-icon pbmit-icon-skincolor"></div>
+                                <div class="pbmit-ihbox-contents">
+                                    <h2 class="pbmit-custom-heading">Phone</h2>
+                                    <div class="pbmit-cta3-content-wrapper">
+                                        +234-816-005-1310
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-4">
+                        <div class="pbmit-ihbox-style-4">
+                            <div class="pbmit-ihbox-inner">
+                                <div class="pbmit-ihbox-icon pbmit-icon-skincolor"></div>
+                                <div class="pbmit-ihbox-contents">
+                                    <h2 class="pbmit-custom-heading">Email</h2>
+                                    <div class="pbmit-cta3-content-wrapper">
+                                        contact@johnsonandwilner.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="pbmit-bg-color-light">
+        <div class="container">
+            <div class="row">
+                <!-- Left Side - Contact Details -->
+                <div class="col-md-6">
+                    <div class="contact-details">
+                        <div class="pbmit-heading-subheading">
+                            <h4 class="pbmit-subtitle">GET IN TOUCH</h4>
+                            <h2 class="pbmit-title">Contact Details</h2>
+                        </div>
+                        <p>If you are interested in working with us then please drop us a line, we would love to hear from you.</p>
+                        
+                        <h5>Opening Hour</h5>
+                        <p>Monday – Friday: 8am to 5pm</p>
+                        
+                        <h5>Call Us Today</h5>
+                        <p>+234- <strong>816-005-1310</strong></p>
+                    </div>
+                </div>
+
+                <!-- Right Side - Contact Form -->
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <div class="pbmit-heading-subheading">
+                            <h4 class="pbmit-subtitle">PLEASE FILL FORM</h4>
+                            <h2 class="pbmit-title">Do You Have Any Questions?</h2>
+                        </div>
+                        
+                        <form method="post" action="/contacts">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" name="full_name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" name="phone" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <textarea name="message" class="form-control" rows="6" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="pbmit-btn pbmit-btn-global pbmit-btn-shape-round w-100">
+                                        SEND MESSAGE
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    `
+    }) %>
