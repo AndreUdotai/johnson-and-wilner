@@ -9,6 +9,10 @@ router.get('/about-us', (req, res) => {
   res.render('about-us', { title: 'About Us' });
 });
 
+router.get('/practice-areas', (req, res) => {
+  res.render('practice-areas', { title: 'Practice Areas' });
+});
+
 router.get('/contacts', (req, res) => {
   res.render('contacts', { title: 'Contact Us' });
 });
