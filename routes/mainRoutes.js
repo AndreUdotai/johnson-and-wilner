@@ -21,4 +21,9 @@ router.get('/news', (req, res) => {
   res.render('news', { title: 'News & Insights' });
 });
 
+// For Publications Page //
+router.get('/publications', (req, res) => {
+  res.render('publications', { title: 'Publications' });
+});
+
 module.exports = router;
