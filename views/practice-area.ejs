@@ -1,0 +1,82 @@
+<%- include('layouts/main', { 
+    title: practiceArea ? practiceArea.title : 'Practice Area',
+    content: `
+        <div class="page-content">
+            <!-- Service Details -->
+            <section class="service-detail">
+                <div class="container">
+                    <div class="row">
+                        <!-- Sidebar -->
+                        <div class="col-lg-3 service-left-col order-2 order-lg-1">
+                            <aside class="sidebar service-sidebar">
+                                <aside class="widget post-list">
+                                    <div class="all-post-list">
+                                        <ul>
+                                            ${practiceAreas.map(area => `
+                                                <li class="${area.id === (practiceArea ? practiceArea.id : 0) ? 'post-active' : ''}">
+                                                    <a href="/practice-area/${area.id}">${area.title}</a>
+                                                </li>
+                                            `).join('')}
+                                        </ul>
+                                    </div>
+                                </aside>
+
+                                <!-- Contact Widget -->
+                                <aside class="widget widget-contact mt-4">
+                                    <div class="single-service-contact">
+                                        <div class="single-service-contact-inner">
+                                            <i class="pbmit-attorco-business-icon pbmit-attorco-business-icon-balance"></i>
+                                            <h3>You Can Contact Us Via</h3>
+                                            <ul>
+                                                <li><span class="pbmit-base-icon-phone"></span><a href="tel:+2348160051310">+234-816-005-1310</a></li>
+                                                <li><span class="fa fa-paper-plane-o"></span> contact@johnsonandwilner.com</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </aside>
+                        </div>
+
+                        <!-- Main Content -->
+                        <div class="col-lg-9 service-right-col order-1">
+                            <div class="pbmit-service-single">
+                                <!-- Dynamic Highlighted Title (like your screenshot) -->
+                                <h1 style="background: var(--pbmit-global-color); color: white; padding: 18px 25px; margin-bottom: 25px; font-size: 1.8rem;">
+                                    ${practiceArea ? practiceArea.title : 'Practice Area'}
+                                </h1>
+
+                                ${practiceArea && practiceArea.image ? 
+                                    `<img src="${practiceArea.image}" class="img-fluid mb-4 rounded" alt="${practiceArea.title}">` : 
+                                    `<img src="/images/service/service-02b.jpg" class="img-fluid mb-4 rounded" alt="">`
+                                }
+
+                                <div class="pbmit-service-description">
+                                    <div class="pbmit-service-contant">
+                                        <h4 class="pbmit-title">${practiceArea ? practiceArea.title : ''}</h4>
+                                        <p><strong>${practiceArea && practiceArea.description ? practiceArea.description : 'Description not available.'}</strong></p>
+                                    </div>
+
+                                    <!-- Additional content from original template -->
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <h5>Key Services</h5>
+                                            <ul class="list-group list-group-borderless">
+                                                <li class="list-group-item"><i class="fa fa-circle"></i> Regulatory Compliance</li>
+                                                <li class="list-group-item"><i class="fa fa-circle"></i> Policy Advisory</li>
+                                                <li class="list-group-item"><i class="fa fa-circle"></i> Contract Negotiation</li>
+                                                <li class="list-group-item"><i class="fa fa-circle"></i> Risk Management</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="/images/line-chart.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    `
+}) %>
