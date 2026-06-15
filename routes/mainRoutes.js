@@ -23,45 +23,34 @@ router.get('/news', (req, res) => {
   res.render('news', { title: 'News & Insights' });
 });
 
-<<<<<<< HEAD
-// For Publications Page //
+// Publications Page
 router.get('/publications', (req, res) => {
   res.render('publications', { title: 'Publications' });
-=======
-// // Practice Area Detail (Dynamic)
-// router.get('/practice-area/:id', (req, res) => {
-//     const id = parseInt(req.params.id);
-    
-//     // For now, we'll simulate loading from the JS file (in production you can import it)
-//     res.render('practice-area', { 
-//         title: 'Practice Area',
-//         practiceArea: { id: id, title: 'Sample Area', description: 'Description here', image: '/images/service/service-01.jpg' }, // Replace with real data loading later
-//         practiceAreas: [] // Pass full list here
-//     });
-// });
+});
 
+// Practice Area Detail Dynamic Page
 router.get('/practice-area/:id', (req, res) => {
-    const id = parseInt(req.params.id);
-    
-    let practiceAreas = [];
-    let practiceArea = null;
+  const id = parseInt(req.params.id);
 
-    try {
-        const dataPath = path.join(__dirname, '../public/js/data/practice-areas.js');
-        delete require.cache[require.resolve(dataPath)]; // Prevent caching issues
-        const dataModule = require(dataPath);
-        practiceAreas = dataModule.default || dataModule;
-        
-        practiceArea = practiceAreas.find(area => area.id === id);
-    } catch (err) {
-        console.error("Error loading practice areas data:", err);
-    }
+  let practiceAreas = [];
+  let practiceArea = null;
 
-    res.render('practice-area', {
-        practiceArea: practiceArea,
-        practiceAreas: practiceAreas
-    });
->>>>>>> cd4578cbf82a2b8c7430365f6145d4413a1348a4
+  try {
+    const dataPath = path.join(__dirname, '../public/js/data/practice-areas.js');
+    delete require.cache[require.resolve(dataPath)];
+    const dataModule = require(dataPath);
+    practiceAreas = dataModule.default || dataModule;
+
+    practiceArea = practiceAreas.find(area => area.id === id);
+  } catch (err) {
+    console.error('Error loading practice areas data:', err);
+  }
+
+  res.render('practice-area', {
+    title: practiceArea ? practiceArea.title : 'Practice Area',
+    practiceArea: practiceArea,
+    practiceAreas: practiceAreas
+  });
 });
 
 module.exports = router;
