@@ -19,10 +19,6 @@ router.get('/contacts', (req, res) => {
   res.render('contacts', { title: 'Contact Us' });
 });
 
-router.get('/news', (req, res) => {
-  res.render('news', { title: 'News & Insights' });
-});
-
 // Publications Page
 router.get('/publications', (req, res) => {
   res.render('publications', { title: 'Publications' });
@@ -47,7 +43,6 @@ router.get('/practice-area/:id', (req, res) => {
   }
 
   res.render('practice-area', {
-    title: practiceArea ? practiceArea.title : 'Practice Area',
     practiceArea: practiceArea,
     practiceAreas: practiceAreas
   });
