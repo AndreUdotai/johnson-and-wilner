@@ -19,8 +19,8 @@ router.get('/contacts', (req, res) => {
   res.render('contacts', { title: 'Contact Us' });
 });
 
-router.get('/news', (req, res) => {
-  res.render('news', { title: 'News & Insights' });
+router.get('/publications', (req, res) => {
+  res.render('publications', { title: 'Publications' });
 });
 
 // // Practice Area Detail (Dynamic)

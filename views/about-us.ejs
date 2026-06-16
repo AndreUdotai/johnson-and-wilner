@@ -1,20 +1,262 @@
-<div class="container my-5">
-  <div class="row">
-    <div class="col-lg-8">
-      <h1 class="mb-4">About Us</h1>
-      <h2 class="mb-4">Our Firm's Mission</h2>
-      <p>JOHNSON & WILNER LLP offers a wide range of legal services, encompassing advisory services, transactional, regulatory, and conflict resolution services, litigation included.</p>
-      <p>The firm serves both public and private sector clients, as well as international organizations. Our primary focus areas are Technology Policy, Payment Systems, Data Governance, and Emerging Technologies.</p>
+<%- include('layouts/main', { title: 'Who We Are' , content: ` <div class="page-content">
+
+  <!-- Hero Section -->
+  <section class="publications-hero">
+    <div class="container">
+      <h4>WHO WE ARE</h4>
+      <h1>Insights at the Intersection of Law, Technology, and Business</h1>
+      <p>Explore our latest publications, legal insights, policy updates, and thought leadership.</p>
     </div>
-    
-    <div class="col-lg-4">
-      <img src="/images/homepage-8/about-img1.png" alt="About Us" class="img-fluid rounded">
+  </section>
+
+  <!-- About Content -->
+  <section class="section-md pbmit-bg-color-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h2 class="pbmit-title">Navigating the Digital Age with You</h2>
+          <p class="lead">Johnson & Wilner LLP is a dynamic and forward-thinking law firm specializing in business and
+            technology law.</p>
+          <p>The firm was established through the strategic merger of distinct law firms to better serve clients in the
+            technology and digital ecosystem.</p>
+          <p>We combine deep legal expertise with practical innovation to deliver insightful solutions for businesses
+            and disruptors across Nigeria and Africa.</p>
+        </div>
+        <div class="col-lg-5">
+          <img src="/images/blog/blog-01.jpg" class="img-fluid rounded shadow-lg" alt="Johnson & Wilner">
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Vision -->
+  <section class="section-md">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <h2 class="pbmit-title text-center">Our Vision</h2>
+          <p class="lead text-center"><i>To be the legal advisers of choice for the industry leaders of today and
+              tomorrow in the digital economy.</i></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main About Content -->
+  <section class="section-md pbmit-bg-color-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="pbmit-service-description">
+            <h2>Leading Technology & Digital Economy Law Firm in Nigeria</h2>
+            <p>Johnson & Wilner LLP is a dynamic and forward-thinking law firm that specialises in business and
+              technology law. The firm was established through the strategic merger of four distinct law firms. This
+              alliance was formed to expand legal services and better serve clients in the technology
+              and technology-mediated ecosystem.</p>
+
+            <p>We apply innovative thinking to develop practical and insightful solutions to complex problems facing
+              business leaders and disruptors in Nigeria and across Africa.</p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+          <div class="pbmit-sidebar">
+            <h4>Why Choose Us</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3">Deep expertise in technology and digital regulation</li>
+              <li class="mb-3">Proven track record in high-stakes transactions</li>
+              <li class="mb-3">Strong relationships with regulators and policymakers</li>
+              <li class="mb-3">Commitment to innovation and commercial outcomes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   </div>
 
-  <!-- Team Section -->
-  <h2 class="text-center mt-5 mb-4">Meet Our Attorneys</h2>
-  <div class="row">
-    <!-- We'll populate this with real attorney cards soon -->
+  <!-- Team Section with Search -->
+  <section class="section-md">
+    <div class="container">
+      <div class="pbmit-heading-subheading text-center">
+        <h4 class="pbmit-subtitle">OUR TEAM</h4>
+        <h2 class="pbmit-title">Meet Our Attorneys</h2>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-12">
+          <form id="attorneySearchForm" class="input-group">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search Attorney…"
+              style="width: 500px; border: 1px, solid; border-color: #cdba6d;">
+            <input type="submit" style="background-color: #cdba6d; border-color: #cdba6d;"
+              class="form-control text-white" value="Search">
+          </form>
+        </div>
+      </div>
+
+      <!-- Attorneys Grid -->
+      <div id="attorneysGrid" class="row">
+
+
+        <!-- Lawyer 1 -->
+
+        <!-- Basil Udotai -->
+        <div class="col-md-6 col-lg-4 mb-4 attorney-card main-partner" data-name="Basil Udotai">
+          <article class="pbmit-teambox-style-2">
+            <div class="pbmit-post-item">
+              <img src="/images/blog/blog-03.jpg" class="img-fluid" alt="Basil Udotai">
+              <div class="pbmit-box-title">
+                <h4>Basil Udotai</h4>
+              </div>
+              <div class="pbmit-box-team-position">Lead Consultant & Founding Partner</div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Rotimi Ogunyemi -->
+        <div class="col-md-6 col-lg-4 mb-4 attorney-card main-partner" data-name="Rotimi Ogunyemi">
+          <article class="pbmit-teambox-style-2">
+            <div class="pbmit-post-item">
+              <img src="/images/blog/blog-03.jpg" class="img-fluid" alt="Rotimi Ogunyemi">
+              <div class="pbmit-box-title">
+                <h4>Rotimi Ogunyemi</h4>
+                <div class="pbmit-box-team-position">Strategic Partner, AI & Emerging Technologies</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Senator Ihenyen -->
+        <div class="col-md-6 col-lg-4 mb-4 attorney-card main-partner" data-name="Senator Ihenyen">
+          <article class="pbmit-teambox-style-2">
+            <div class="pbmit-post-item">
+              <img src="/images/blog/blog-03.jpg" class="img-fluid" alt="Senator Ihenyen">
+              <div class="pbmit-box-title">
+                <h4>Senator Ihenyen</h4>
+                <div class="pbmit-box-team-position">Strategic Partner, Payment Systems & FinTech</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Dr. Joseph Nwobike -->
+        <div class="col-md-6 col-lg-4 mb-4 attorney-card main-partner" data-name="Joseph Nwobike">
+          <article class="pbmit-teambox-style-2">
+            <div class="pbmit-post-item">
+              <img src="/images/blog/blog-03.jpg" class="img-fluid" alt="Dr. Joseph Nwobike">
+              <div class="pbmit-box-title">
+                <h4>Dr. Joseph Nwobike, SAN</h4>
+                <div class="pbmit-box-team-position">Of Counsel</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Edidiong Idiong -->
+        <div class="col-md-6 col-lg-4 mb-4 attorney-card main-partner" data-name="Edidiong Idiong">
+          <article class="pbmit-teambox-style-2">
+            <div class="pbmit-post-item">
+              <img src="/images/blog/blog-03.jpg" class="img-fluid" alt="Edidiong Idiong">
+              <div class="pbmit-box-title">
+                <h4>Edidiong Idiong</h4>
+                <div class="pbmit-box-team-position">Of Counsel</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Malik Abdullatif -->
+        <div class="col-md-6 col-lg-4 mb-4 attorney-card" data-name="Malik Abdullatif">
+          <article class="pbmit-teambox-style-2">
+            <div class="pbmit-post-item">
+              <img src="/images/blog/blog-03.jpg" class="img-fluid" alt="Malik Abdullatif">
+              <div class="pbmit-box-title">
+                <h4>Malik Abdullatif</h4>
+              </div>
+              <div class="pbmit-box-team-position">Affiliated Counsel</div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Fortune Ugwumba -->
+        <div class="col-md-6 col-lg-4 mb-4 attorney-card" data-name="Fortune Ugwumba">
+          <article class="pbmit-teambox-style-2">
+            <div class="pbmit-post-item">
+              <img src="/images/blog/blog-03.jpg" class="img-fluid" alt="Fortune Ugwumba">
+              <div class="pbmit-box-title">
+                <h4>Fortune Ugwumba</h4>
+              </div>
+              <div class="pbmit-box-team-position">Senior Associate</div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Favour Nwadibia -->
+        <div class="col-md-6 col-lg-4 mb-4 attorney-card" data-name="Favour Nwadibia">
+          <article class="pbmit-teambox-style-2">
+            <div class="pbmit-post-item">
+              <img src="/images/blog/blog-03.jpg" class="img-fluid" alt="Favour Nwadibia">
+              <div class="pbmit-box-title">
+                <h4>Favour Nwadibia</h4>
+              </div>
+              <div class="pbmit-box-team-position">Associate</div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Lauretta Ikeji -->
+        <div class="col-md-6 col-lg-4 mb-4 attorney-card" data-name="Lauretta Ikeji">
+          <article class="pbmit-teambox-style-2">
+            <div class="pbmit-post-item">
+              <img src="/images/blog/blog-03.jpg" class="img-fluid" alt="Lauretta Ikeji">
+              <div class="pbmit-box-title">
+                <h4>Lauretta Ikeji</h4>
+              </div>
+              <div class="pbmit-box-team-position">Associate</div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   </div>
-</div>
+
+  <!-- Search Script -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const attorneyCards = document.querySelectorAll('.attorney-card');
+
+    function filterAttorneys() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+
+      attorneyCards.forEach(card => {
+        const name = card.getAttribute('data-name').toLowerCase();
+        if (searchTerm === '') {
+          // Show ONLY main partners when search is empty
+          card.style.display = card.classList.contains('main-partner') ? 'block' : 'none';
+          // card.style.display = 'block';
+        } else {
+          // Show matching results when user is searching
+          card.style.display = name.includes(searchTerm) ? 'block' : 'none';
+        }
+      });
+    }
+
+    // Live search as user types
+    searchInput.addEventListener('input', filterAttorneys);
+
+    // Also support form submit
+    document.getElementById('attorneySearchForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      filterAttorneys();
+    });
+
+    // Initial load - show only main partners
+    window.addEventListener('load', filterAttorneys);
+  </script>
+  `
+  }) %>
