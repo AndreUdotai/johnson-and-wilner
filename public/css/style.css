@@ -2138,3 +2138,63 @@ body {
 .publication-card:hover .publication-link {
     color: var(--pbmit-global-color);
 }
+
+
+/* About Page Enhancements */
+.about-hero {
+    position: relative;
+}
+
+.pbmit-title-bar-wrapper {
+    position: relative;
+}
+
+.pbmit-title-bar-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5));
+    z-index: 1;
+}
+
+.pbmit-title-bar-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Warm & Modern Cards */
+.partner-card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+/* Warm accent colors */
+.pbmit-title {
+    color: #1a3c6e;
+}
+
+.lead {
+    color: #334155;
+}
+
+/* Responsive spacing */
+.section-md {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+    .section-md {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
