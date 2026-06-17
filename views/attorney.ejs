@@ -1,0 +1,128 @@
+<%- include('layouts/main', { title: attorney ? attorney.name : 'Attorney Profile' , content: ` <div
+    class="page-content">
+
+    <section class="publications-hero">
+        <div class="container">
+            <h1 style="color: var(--pbmit-global-color);">${attorney ? attorney.name : ''}</h1>
+            <p>${attorney ? attorney.role : ''}</p>
+        </div>
+    </section>
+
+    <!-- Profile Content -->
+    <section class="section-md pbmit-bg-color-light">
+        <div class="container">
+            <div class="row">
+                <!-- Left: Image -->
+                <div class="col-lg-5">
+                    <div class="attorney-image-container">
+                        ${attorney && attorney.image ?
+                        `<img src="${attorney.image}" class="img-fluid rounded shadow-lg" alt="${attorney.name}">` :
+                        `<img src="/images/team/default.jpg" class="img-fluid rounded shadow-lg" alt="Attorney">`
+                        }
+                    </div>
+                </div>
+
+                <!-- Right: Details -->
+                <div class="col-lg-7">
+                    <div class="pbmit-service-description">
+                        <p class="lead">${attorney ? attorney.introduction : ''}</p>
+                        <p>${attorney ? attorney.bio : 'Detailed biography coming soon.'}</p>
+
+                        <h4 class="mt-5">Relevant Experience</h4>
+                        <ul class="experience-list">
+                            ${attorney && attorney.experiences ?
+                            attorney.experiences.map(exp => `<li>${exp}</li>`).join('') :
+                            '<li>Experienced legal practitioner</li>'}
+                        </ul>
+
+                        <h4 class="mt-5">Expertise</h4>
+                        <div class="expertise-tags mb-4">
+                            ${attorney && attorney.expertise ? attorney.expertise.map(exp => `<span
+                                class="badge me-2">${exp}</span>`).join('') : ''}
+                        </div>
+
+                        <!-- Contact Info -->
+                        <h4>Contact</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Email:</strong><br>
+                                    <a href="mailto:${attorney ? attorney.email : ''}">${attorney ? attorney.email :
+                                        ''}</a>
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Phone:</strong><br>
+                                    ${attorney ? attorney.phone : ''}</p>
+                            </div>
+                        </div>
+                        <div class="pbmit-team-social-links-wrapper">
+                            <ul class="pbmit-team-social-links">
+                                <li>
+
+                                    <a href="attorney.linkedIn" target="_blank">
+                                        <i class="pbmit-base-icon-linkedin"></i>
+                                        <span class="pbmit-hide">LinkedIn</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- ${attorney && attorney.linkedin ? `
+                        <p><strong>LinkedIn:</strong><br>
+                            <a href="${attorney.linkedin}" target="_blank">View Profile</a>
+                        </p>` : ''}
+
+                        ${attorney && attorney.linkedin ? `
+                        <p><strong>LinkedIn:</strong><br>
+                            <a href="${attorney.linkedin}" target="_blank">View Profile</a>
+                        </p>` : ''} -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+    <style>
+        .attorney-image-container {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .attorney-image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .expertise-tags .badge {
+            background-color: #cdba6d;
+            color: #1a3c6e;
+            padding: 8px 16px;
+            font-weight: 500;
+        }
+
+        .experience-list {
+            padding-left: 20px;
+            list-style-type: disc;
+            margin-bottom: 2rem;
+        }
+
+        .experience-list li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 992px) {
+            .attorney-image-container {
+                max-width: 380px;
+                margin: 0 auto 2rem;
+            }
+        }
+    </style>
+    `
+    }) %>
