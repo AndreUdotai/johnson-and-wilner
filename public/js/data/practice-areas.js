@@ -4,7 +4,7 @@ const practiceAreas = [
     title: "Technology Policy",
     category: "Policy",
     image: "/images/service/service-01.jpg",
-    description: "Strategic advisory on technology regulation, digital economy policy, and emerging tech governance."
+    description: "Strategic advisory on technology regulation, digital economy policy, and emerging tech governance.",
   },
   {
     id: 2,
