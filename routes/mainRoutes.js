@@ -48,4 +48,19 @@ router.get('/practice-area/:id', (req, res) => {
   });
 });
 
+// Individual Attorney Profile
+router.get('/attorney/:slug', (req, res) => {
+    const slug = req.params.slug;
+    const dataModule = require('../public/js/data/team.js');
+    const teamMembers = dataModule.default || dataModule;
+    
+    const attorney = teamMembers.find(member => member.slug === slug);
+
+    if (!attorney) {
+        return res.status(404).render('404');
+    }
+
+    res.render('attorney', { attorney });
+});
+
 module.exports = router;

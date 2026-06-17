@@ -2198,3 +2198,16 @@ body {
         padding-bottom: 3rem;
     }
 }
+
+
+
+
+
+.pbmit-team-social-links-wrapper ul li a{
+	font-size: 15px;
+    padding: 10px 8px;
+    display: inline-block;
+	color: var(--pbmit-white-color);
+	background-color: var(--pbmit-global-color);
+	transition: all .3s ease 0s;
+}
