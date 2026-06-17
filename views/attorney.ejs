@@ -37,8 +37,8 @@
 
                         <h4 class="mt-5">Expertise</h4>
                         <div class="expertise-tags mb-4">
-                            ${attorney && attorney.expertise ? attorney.expertise.map(exp => `<span
-                                class="badge me-2">${exp}</span>`).join('') : ''}
+                            ${attorney && attorney.expertise ? attorney.expertise.map(exp => `<span class="badge me-2"
+                                style="margin-top: 5px">${exp}</span>`).join('') : ''}
                         </div>
 
                         <!-- Contact Info -->
@@ -59,25 +59,20 @@
                             <ul class="pbmit-team-social-links">
                                 <li>
 
-                                    <a href="attorney.linkedIn" target="_blank">
+                                    <!-- <a href="${attorney ? attorney.linkedin : '#'}"
+                                        target="_blank" rel="noopener" class="text-primary">
+                                        <i class="pbmit-base-icon-linkedin"></i>
+                                    </a> -->
+
+                                    <a href="${attorney ? attorney.linkedin : '#'}" target="_blank" rel="noopener" class="text-primary">
                                         <i class="pbmit-base-icon-linkedin"></i>
                                         <span class="pbmit-hide">LinkedIn</span>
                                     </a>
 
+
                                 </li>
                             </ul>
                         </div>
-
-                        <!-- ${attorney && attorney.linkedin ? `
-                        <p><strong>LinkedIn:</strong><br>
-                            <a href="${attorney.linkedin}" target="_blank">View Profile</a>
-                        </p>` : ''}
-
-                        ${attorney && attorney.linkedin ? `
-                        <p><strong>LinkedIn:</strong><br>
-                            <a href="${attorney.linkedin}" target="_blank">View Profile</a>
-                        </p>` : ''} -->
-
                     </div>
                 </div>
             </div>
