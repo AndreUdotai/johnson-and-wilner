@@ -120,7 +120,7 @@ const teamMembers = [
         email: "mulik@johnsonandwilner.com",
         phone: "+234 816 005 1310",
         linkedin: "https://linkedin.com/in/muhaiminabdulmalik",
-        mainPartner: false,
+        mainPartner: true,
     },
     {
         id: 7,
@@ -142,7 +142,7 @@ const teamMembers = [
         email: "fortune@johnsonandwilner.com",
         phone: "+234 816 005 1310",
         linkedin: "https://linkedin.com/in/fortuneugwumba",
-        mainPartner: false,
+        mainPartner: true,
     },
     {
         id: 8,
@@ -162,7 +162,7 @@ const teamMembers = [
         email: "favour@johnsonandwilner.com",
         phone: "+234 816 005 1310",
         linkedin: "https://linkedin.com/in/favournwadibie",
-        mainPartner: false,
+        mainPartner: true,
     },
     {
         id: 9,
@@ -182,7 +182,7 @@ const teamMembers = [
         email: "lauretta@johnsonandwilner.com",
         phone: "+234 816 005 1310",
         linkedin: "https://linkedin.com/in/laurettatumeh",
-        mainPartner: false,
+        mainPartner: true,
     },
 
     // Add more members here...
