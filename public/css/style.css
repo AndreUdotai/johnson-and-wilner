@@ -2211,3 +2211,17 @@ body {
 	background-color: var(--pbmit-global-color);
 	transition: all .3s ease 0s;
 }
+
+
+/* Remove background shield/logo in footer */
+.pbmit-footer-widget-area,
+.site-footer,
+.pbmit-footer-bottom {
+    background-image: none !important;
+}
+
+.pbmit-footer-big-area::before,
+.pbmit-footer-widget-area::before {
+    display: none !important;
+    visibility: hidden;
+}
