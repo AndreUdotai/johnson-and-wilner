@@ -2225,3 +2225,10 @@ body {
     display: none !important;
     visibility: hidden;
 }
+
+/* Justify text in attorney pages */
+.pbmit-service-description p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.75;
+}
