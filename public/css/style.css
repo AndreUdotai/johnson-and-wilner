@@ -1031,7 +1031,7 @@
 	position: relative;
 	z-index: 1;
 	margin-top: -220px;
-	background-image: url(../images/New-images/BR.png);
+	background-image: url(../images/homepage-8/bg/BR.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1065,7 +1065,7 @@
 	top: 0;
 	right: 0;
 	display: block;
-	background-image: url(../images/New-images/Loreta-1.png);
+	background-image: url(../images/homepage-8/bg/Loreta-1.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2214,4 +2214,25 @@ body {
 	color: var(--pbmit-white-color);
 	background-color: var(--pbmit-global-color);
 	transition: all .3s ease 0s;
+}
+
+
+/* Remove background shield/logo in footer */
+.pbmit-footer-widget-area,
+.site-footer,
+.pbmit-footer-bottom {
+    background-image: none !important;
+}
+
+.pbmit-footer-big-area::before,
+.pbmit-footer-widget-area::before {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Justify text in attorney pages */
+.pbmit-service-description p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.75;
 }
