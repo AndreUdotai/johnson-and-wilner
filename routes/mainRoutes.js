@@ -12,7 +12,8 @@ const router = express.Router();
 router.get('/', (req, res) => {
   res.render('index', {
     title: 'Home',
-    publications: publications.slice(0, 3)
+    publications: publications.slice(0, 3),
+    practiceAreas: practiceAreas
   });
 });
 
