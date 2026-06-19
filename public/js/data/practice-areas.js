@@ -8,14 +8,14 @@ const practiceAreas = [
   },
   {
     id: 2,
-    title: "Data Governance & Privacy",
+    title: "Data Governance & <br>Privacy",
     category: "Regulatory",
     image: "/images/practice-areas/2.png",
     description: "Expert guidance on data protection, privacy laws, and compliance with global standards."
   },
   {
     id: 3,
-    title: "Payment Systems & FinTech",
+    title: "Payment Systems & <br>FinTech",
     category: "FinTech",
     image: "/images/practice-areas/3.png",
     description: "Legal support for payment platforms, digital financial services, and regulatory compliance."
@@ -29,7 +29,7 @@ const practiceAreas = [
   },
   {
     id: 5,
-    title: "Cybersecurity & Digital Risk",
+    title: "Cybersecurity & <br>Digital Risk",
     category: "Cybersecurity",
     image: "/images/practice-areas/5.png",
     description: "Comprehensive legal strategies for digital security, risk management, and incident response."

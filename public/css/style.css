@@ -2236,3 +2236,11 @@ body {
     text-justify: inter-word;
     line-height: 1.75;
 }
+
+/* === Practice Areas Section Styling === */
+
+/* Remove section padding */
+section.section-md.pbmit-bg-color-blackish {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
