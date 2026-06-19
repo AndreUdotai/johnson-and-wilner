@@ -1093,7 +1093,11 @@
     font-size: 44px;
     line-height: 48px;
 }
-
+/* Homepage Publications Section */
+.home-publications-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 /*----------------------------------------*/
 /* 01 - Inner Page 
 /*----------------------------------------*/

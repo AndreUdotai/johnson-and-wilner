@@ -1,10 +1,17 @@
 const path = require('path');
 
+// Load shared publications data for dynamic rendering across the website.
+const publications = require('../public/js/data/publications');
 const express = require('express');
 const router = express.Router();
 
+// UPDATED!
+// Pass the three most recent publications to the homepage.
 router.get('/', (req, res) => {
-  res.render('index', { title: 'Home' });
+  res.render('index', {
+    title: 'Home',
+    publications: publications.slice(0, 3)
+  });
 });
 
 router.get('/about-us', (req, res) => {
@@ -20,8 +27,13 @@ router.get('/contacts', (req, res) => {
 });
 
 // Publications Page
+// UPDATED!
+// Pass the complete publications list to the Publications page.
 router.get('/publications', (req, res) => {
-  res.render('publications', { title: 'Publications' });
+  res.render('publications', {
+    title: 'Publications',
+    publications
+  });
 });
 
 // Practice Area Detail Dynamic Page
