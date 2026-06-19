@@ -1,5 +1,7 @@
 const path = require('path');
 
+// Load shared practice area data for dynamic rendering.
+const practiceAreas = require('../public/js/data/practice-areas');
 // Load shared publications data for dynamic rendering across the website.
 const publications = require('../public/js/data/publications');
 const express = require('express');
@@ -18,8 +20,13 @@ router.get('/about-us', (req, res) => {
   res.render('about-us', { title: 'About Us' });
 });
 
+// UPDATED!
+// Pass all practice areas to the Practice Areas page.
 router.get('/practice-areas', (req, res) => {
-  res.render('practice-areas', { title: 'Practice Areas' });
+  res.render('practice-areas', {
+    title: 'Practice Areas',
+    practiceAreas
+  });
 });
 
 router.get('/contacts', (req, res) => {
