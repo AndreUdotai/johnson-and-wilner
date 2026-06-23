@@ -82,4 +82,9 @@ router.get('/attorney/:slug', (req, res) => {
     res.render('attorney', { attorney });
 });
 
+// Import and route contact form submissions through the contact email service.
+router.post('/contact', require('../services/contactService').sendContactEmail);
+// Import and Route newsletter subscriptions through the Mailchimp service.
+router.post('/subscribe', require('../services/mailchimpService').subscribeToNewsletter);
+
 module.exports = router;

@@ -1082,6 +1082,18 @@
 	color: #42474c;
 	background-color: var(--pbmit-white-color);
 }
+/* Make homepage contact form input text visible */
+.appoinment-eight .form-control {
+    color: #ffffff !important;
+}
+
+.appoinment-eight .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.appoinment-eight .form-control:focus {
+    color: #ffffff !important;
+}
 .blog-heading-subheading-style .pbmit-subtitle{
 	font-weight: 700;
     font-size: 12px;
