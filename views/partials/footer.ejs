@@ -45,10 +45,12 @@
                         </div>
                         <p class="pbmit-footer-text">At the Intersection of Law, Technology, and Business</p>
                         
-                        <form action="#" method="post">
+                        <!-- Submit newsletter subscriptions to the backend -->
+                        <form action="/subscribe" method="POST">
                             <div class="form-row align-items-center">
                                 <div class="col-auto">
-                                    <input type="email" name="EMAIL" placeholder="Email address" required="">
+                                    <!-- Capture the subscriber's email address for newsletter registration. -->
+                                    <input type="email" name="email" placeholder="Email address" required>
                                     <button type="submit"><i class="pbmit-base-icon-mail-alt"></i></button>
                                 </div>
                             </div>

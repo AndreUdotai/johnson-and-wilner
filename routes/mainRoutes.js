@@ -1,5 +1,7 @@
 const path = require('path');
 
+// Import the File System module to read from and write to the subscribers JSON file.
+const fs = require("fs");
 // Import Nodemailer for handling outgoing emails from contact forms.
 const nodemailer = require('nodemailer');
 // Load shared practice area data for dynamic rendering.
@@ -133,6 +135,43 @@ router.post('/contact', async (req, res) => {
     console.error('Email sending failed:', error);
     res.redirect('/contacts?error=true');
   }
+});
+
+// Save newsletter subscribers to a local JSON file.
+router.post("/subscribe", (req, res) => {
+  const { email } = req.body;
+
+  if (!email) {
+    return res.redirect("/");
+  }
+
+  const filePath = path.join(__dirname, "../subscribers.json");
+
+  let subscribers = [];
+
+  try {
+    if (fs.existsSync(filePath)) {
+      subscribers = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    }
+  } catch (err) {
+    subscribers = [];
+  }
+
+  // Prevent duplicate subscriptions
+  const exists = subscribers.some(
+    (subscriber) => subscriber.email.toLowerCase() === email.toLowerCase()
+  );
+
+  if (!exists) {
+    subscribers.push({
+      email,
+      subscribedAt: new Date().toISOString()
+    });
+
+    fs.writeFileSync(filePath, JSON.stringify(subscribers, null, 2));
+  }
+
+  res.redirect("/");
 });
 
 module.exports = router;
