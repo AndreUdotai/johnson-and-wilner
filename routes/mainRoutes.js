@@ -21,11 +21,12 @@ router.get('/about-us', (req, res) => {
 });
 
 // UPDATED!
-// Pass all practice areas to the Practice Areas page.
+// Pass practice areas and recent publications to the Practice Areas page.
 router.get('/practice-areas', (req, res) => {
   res.render('practice-areas', {
     title: 'Practice Areas',
-    practiceAreas
+    practiceAreas,
+    publications: publications.slice(0, 3)
   });
 });
 

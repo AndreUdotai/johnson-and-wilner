@@ -44,6 +44,43 @@
                 </div>
             </div>
         </section>
+
+        <!-- Publications Start -->
+        <!-- Practice Areas page Publications section showcasing the latest publications. -->
+        <section class="home-publications-section">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-8">
+                        <div class="pbmit-heading-subheading-style-2">
+                            <h4 class="pbmit-subtitle">PUBLICATIONS</h4>
+                            <h2 class="pbmit-title">Recent Publications</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dynamically display the three most recent publications on the Practice Areas page. -->
+                <div class="row">
+                    ${publications.map(publication => `
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <a href="${publication.link}" target="_blank" rel="noopener noreferrer" class="publication-card">
+                                <h3>${publication.title}</h3>
+                                <div class="publication-date">${publication.date}</div>
+                                <span class="publication-link">Read Publication →</span>
+                            </a>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <a class="pbmit-btn pbmit-btn-global" href="/publications">
+                            <span>View All Publications</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Publications End -->
     </div>
 
     `
