@@ -2248,3 +2248,13 @@ body {
     text-justify: inter-word;
     line-height: 1.75;
 }
+
+/* Increase the height of the contact info cards */
+.contact-ihbox .pbmit-ihbox-style-4 {
+    height: 100%;
+    min-height: 100px;
+}
+
+.contact-ihbox .pbmit-ihbox-inner {
+    height: 100%;
+}
