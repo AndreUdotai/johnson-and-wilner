@@ -45,16 +45,25 @@ const teamMembers = [
         name: "Rotimi Ogunyemi",
         role: "Strategic Partner, AI & Emerging Technologies",
         image: "/images/team/rotimi-ogunyemi.jpg",
-        introduction: "Nigeria’s “Father of Technology Law”",
-        bio: "Rotimi Ogunyemi is the Lead Consultant at Johnson & Wilner LLP. He served as the Director of Cybersecurity at the Office of the National Security Adviser...",
+        introduction: "Leading Technology Law Expert driving Nigeria’s digital legal future.",
+        bio: `Rotimi Ogunyemi is an accomplished Technology Attorney. As the Partner leading the Firm's Emerging 
+        Technology Practice, he applies his deep understanding of law, business, and technology to add value for 
+        clients.\n\n Rotimi played a key role in the Nigerian Bar Association's digital transformation journey, serving 
+        as the Co-Chair of Digital NBA [2021-2022]. He is a Council Member of the NBA - Section on Business Law and 
+        Chair of the ICT Committee, where he's leading capacity-building initiatives for commercial lawyers and addressing 
+        emerging legal issues driven by the growth of the digital economy. He is a prolific speaker and writer, with numerous 
+        publications and presentations on technology law, digital transformation, artificial intelligence, blockchain, and 
+        cybersecurity.\n\n As a leading figure in technology law, Rotimi has significantly influenced its development in Nigeria. 
+        He is also an Adjunct Faculty Member at the Nigerian Communications Commission's Digital Bridge Institute. As an active 
+        member of global legal bodies, including the Global Blockchain Business Council, Rotimi continues to advocate for 
+        technology law, policy, and governance at the national and international levels.`,
         experiences: [
-            "Former Director of Cybersecurity, Office of the National Security Adviser",
-            "Former General Counsel, National Information Technology Development Agency (NITDA)",
-            "Pioneer Head of the Directorate for Cybersecurity"
+            "Former Chair, Technology Committee NBA-SBL",
+            "President, Spindlar Cyberlaw Centre",
         ],
-        expertise: ["Technology Policy", "Cybersecurity", "Data Governance", "Digital Regulation"],
+        expertise: ["Technology Law", "Digital Governance", "Digital Regulation"],
         email: "rotimi@johnsonandwilner.com",
-        phone: "+234 816 005 1310",
+        phone: "+234 705 472 0175",
         linkedin: "https://linkedin.com/in/rotimiogunyemi",
         mainPartner: true,
     },
@@ -143,7 +152,7 @@ const teamMembers = [
         email: "mulik@johnsonandwilner.com",
         phone: "+234 814 182 5161",
         linkedin: "https://www.linkedin.com/in/muhaiminabdulmalik",
-        mainPartner: true,
+        mainPartner: false,
     },
     {
         id: 7,
@@ -176,7 +185,7 @@ const teamMembers = [
         email: "fortune@johnsonandwilner.com",
         phone: "+234 813 005 0395",
         linkedin: "https://linkedin.com/in/fortuneugwumba",
-        mainPartner: true,
+        mainPartner: false,
     },
     {
         id: 8,
@@ -209,7 +218,7 @@ const teamMembers = [
         email: "favour@johnsonandwilner.com",
         phone: "+234 806 493 6802",
         linkedin: "https://linkedin.com/in/favournwadibie",
-        mainPartner: true,
+        mainPartner: false,
     },
     {
         id: 9,
@@ -239,7 +248,7 @@ const teamMembers = [
         email: "lauretta@johnsonandwilner.com",
         phone: "+2349067384770",
         linkedin: "https://linkedin.com/in/laurettatumeh",
-        mainPartner: true,
+        mainPartner: false,
     },
 
     // Add more members here...
