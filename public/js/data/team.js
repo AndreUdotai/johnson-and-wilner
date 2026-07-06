@@ -84,7 +84,7 @@ const teamMembers = [
         link: "http://localhost:3000/attorney/joseph-nwobike",
         name: "Dr. Joseph Nwobike, SAN",
         role: "Of Counsel",
-        image: "/images/team/joseph-nwobike-2.jpeg",
+        image: "/images/team/joseph-nwobike.jpeg",
         introduction: "Nigeria’s “Father of Technology Law”",
         bio: "Dr. Joseph Nwobike is the Lead Consultant at Johnson & Wilner LLP. He served as the Director of Cybersecurity at the Office of the National Security Adviser...",
         experiences: [
@@ -184,7 +184,7 @@ const teamMembers = [
         link: "http://localhost:3000/attorney/favour-nwadibie",
         name: "Favour Nwadibie",
         role: "Associate",
-        image: "/images/team/favour-nwadibie.jpeg",
+        image: "/images/team/favour-nwadibie.PNG",
         introduction: "Favour is an Associate at Johnson & Wilner LLP, specialising in business and technology law.",
         bio: `Favour Nwadibie is a multi-talented legal practitioner specialising in business and technology law. Her 
         professional experience spans regulatory compliance, technology contracts, data protection and privacy, digital 
