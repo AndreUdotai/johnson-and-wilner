@@ -43,7 +43,10 @@ const teamMembers = [
         slug: "rotimi-ogunyemi",
         link: "http://localhost:3000/attorney/rotimi-ogunyemi",
         name: "Rotimi Ogunyemi",
-        role: "Strategic Partner, AI & Emerging Technologies",
+        role: "Strategic Partner, AI & Emerging Technologies | BOC Legal",
+        intro: `Rotimi Ogunyemi is a Strategic Partner at Johnson & Wilner LLP and the founder of BOC Legal. 
+        He leads the alliance’s Emerging Technology Practice, bringing deep expertise in technology law, digital 
+        transformation, AI, and blockchain.`,
         image: "/images/team/rotimi-ogunyemi.jpg",
         introduction: "Leading Technology Law Expert driving Nigeria’s digital legal future.",
         bio: `Rotimi Ogunyemi is an accomplished Technology Attorney. As the Partner leading the Firm's Emerging 
