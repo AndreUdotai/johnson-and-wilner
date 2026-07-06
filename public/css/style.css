@@ -2258,3 +2258,89 @@ body {
 .contact-ihbox .pbmit-ihbox-inner {
     height: 100%;
 }
+
+/* Trusted Clients Section */
+.trusted-clients-section {
+    padding: 90px 0 120px;
+    background-color: #ffffff;
+}
+
+.trusted-clients-heading {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.trusted-clients-heading h4 {
+    color: var(--pbmit-global-color);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.trusted-clients-heading h2 {
+    color: var(--pbmit-secondary-color);
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+/* Match reference layout: centered rows, natural logo widths, balanced spacing */
+.trusted-clients-grid {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   	gap: 0px 42px;
+}
+
+/* Do not force equal card boxes; let each logo keep its natural shape */
+.trusted-client-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Make logos large and visible while preserving different logo proportions */
+.trusted-client-logo img {
+    max-height: 170px;
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+
+@media (max-width: 991px) {
+    .trusted-clients-grid {
+        column-gap: 35px;
+        row-gap: 38px;
+    }
+
+    .trusted-client-logo img {
+        max-height: 60px;
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 575px) {
+    .trusted-clients-section {
+        padding: 65px 0 80px;
+    }
+
+    .trusted-clients-heading h2 {
+        font-size: 30px;
+    }
+
+    .trusted-clients-grid {
+        column-gap: 25px;
+        row-gap: 30px;
+    }
+
+    .trusted-client-logo img {
+        max-height: 48px;
+        max-width: 140px;
+    }
+}
