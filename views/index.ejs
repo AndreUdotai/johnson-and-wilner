@@ -381,6 +381,27 @@
             </div>
         </section>
         <!-- Client End -->
+        
+        <!-- Trusted Clients Start -->
+        <!-- Display client and partner logos in a clean reference-style layout. -->
+        <section class="trusted-clients-section">
+            <div class="container">
+                <div class="trusted-clients-heading text-center">
+                    <h4>TRUSTED BY</h4>
+                    <h2>Organizations We Have Worked With</h2>
+                </div>
+
+                <!-- Dynamically display all client logos while preserving their natural logo proportions. -->
+                <div class="trusted-clients-grid">
+                    ${clients.map(client => `
+                        <div class="trusted-client-logo">
+                            <img src="${client.logo}" alt="${client.name}">
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </section>
+        <!-- Trusted Clients End -->
 
     </div>
     `

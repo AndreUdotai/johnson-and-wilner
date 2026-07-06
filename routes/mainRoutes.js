@@ -1,5 +1,7 @@
 const path = require('path');
 
+// Load shared client logo data for the homepage trusted brands section.
+const clients = require('../public/js/data/clients');
 // Load shared practice area data for dynamic rendering.
 const practiceAreas = require('../public/js/data/practice-areas');
 // Load shared publications data for dynamic rendering across the website.
@@ -12,7 +14,8 @@ const router = express.Router();
 router.get('/', (req, res) => {
   res.render('index', {
     title: 'Home',
-    publications: publications.slice(0, 3)
+    publications: publications.slice(0, 3),
+    clients
   });
 });
 
