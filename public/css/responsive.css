@@ -29,9 +29,6 @@ body {
 		padding-left: 20px;
    	 	padding-right: 20px;
 	}
-	.header-style-8 .pbmit-header-left-area{
-		display: none;
-	}
 	.header-style-8 .pbmit-social-links-wrapper{
 		padding-right: 0;
 	}
@@ -704,6 +701,9 @@ body {
 	}
 	.header-style-8 .site-branding{
 		border-right: none;
+	}
+	.header-style-8 .pbmit-header-left-area{
+		display: none;
 	}
 	.header-style-8 .pbmit-responsive-icons{
 		display: inline-block;

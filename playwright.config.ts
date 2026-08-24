@@ -1,4 +1,11 @@
 import { defineConfig, devices } from '@playwright/test';
+import { config as loadEnv } from 'dotenv';
+import path from 'path';
+
+// Load local test/app configuration (BASE_URL, email credentials, etc.).
+loadEnv({ path: path.resolve(__dirname, '.env') });
+
+const baseURL = process.env.BASE_URL ?? 'http://localhost:3000';
 
 /**
  * Playwright configuration for Johnson & Wilner LLP
@@ -13,7 +20,7 @@ export default defineConfig({
   reporter: 'html',
 
   use: {
-    baseURL: 'http://localhost:3000',
+    baseURL,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
   },
@@ -30,7 +37,7 @@ export default defineConfig({
   /* Automatically start the Express server before tests */
   webServer: {
     command: 'npm run start',
-    url: 'http://localhost:3000',
+    url: baseURL,
     reuseExistingServer: !process.env.CI,
     timeout: 120 * 1000,
   },
