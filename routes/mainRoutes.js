@@ -34,7 +34,11 @@ router.get('/practice-areas', (req, res) => {
 });
 
 router.get('/contacts', (req, res) => {
-  res.render('contacts', { title: 'Contact Us' });
+  res.render('contacts', {
+    title: 'Contact Us',
+    formSuccess: req.query.success === 'true',
+    formError: req.query.error === 'true'
+  });
 });
 
 // Publications Page
