@@ -9,11 +9,12 @@ test.describe("Contact Form", () => {
   }) => {
     const contactPage = new ContactPage(page);
 
+    // Do not send a real email in CI or local test runs.
+    await contactPage.mockSuccessfulSubmit();
     await contactPage.goto();
     await contactPage.submitForm(validContactPayload);
 
     // Expected UX: an inline confirmation just below the form.
-    // This assertion is intentionally failing until the feature is implemented.
     try {
       await expect(contactPage.successMessage).toBeVisible();
       await expect(contactPage.successMessage).toHaveText(
