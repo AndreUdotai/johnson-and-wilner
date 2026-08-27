@@ -2038,6 +2038,15 @@ label.error {
 .appoinment-eight-main .message-status.is-error{
 	color: #ff8a80;
 }
+.contact-form .message-status{
+	min-height: 1.5em;
+	font-size: 14px;
+	font-weight: 600;
+	color: #1a7f37;
+}
+.contact-form .message-status.is-error{
+	color: #b42318;
+}
 /**07 - Comment Form **/
 .form-control{
 	font-size: 12px;
