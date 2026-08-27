@@ -145,6 +145,8 @@
                                 </div>
                             </div>
                         </form>
+                        <p class="message-status${formError ? ' is-error' : ''}" role="status" aria-live="polite">${formSuccess ? 'Message sent successfully!' : formError ? 'Unable to send your message. Please try again.' : ''}</p>
+                        <script src="/js/contact-form.js"></script>
                     </div>
                 </div>
             </div>

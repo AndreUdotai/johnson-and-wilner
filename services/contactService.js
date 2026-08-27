@@ -45,12 +45,37 @@ const sendContactEmail = async (req, res) => {
       `
     });
 
-    res.redirect('/contacts?success=true');
+    return sendContactResponse(req, res, {
+      success: true,
+      status: 200,
+      message: 'Message sent successfully!'
+    });
   } catch (error) {
     console.error('Email sending failed:', error);
-    res.redirect('/contacts?error=true');
+    return sendContactResponse(req, res, {
+      success: false,
+      status: 500,
+      message: 'Unable to send your message. Please try again.'
+    });
   }
 };
+
+function wantsJson(req) {
+  const accept = req.get('Accept') || '';
+  return (
+    req.xhr === true ||
+    req.get('X-Requested-With') === 'XMLHttpRequest' ||
+    accept.includes('application/json')
+  );
+}
+
+function sendContactResponse(req, res, { success, status, message }) {
+  if (wantsJson(req)) {
+    return res.status(status).json({ success, message });
+  }
+
+  return res.redirect(success ? '/contacts?success=true' : '/contacts?error=true');
+}
 
 module.exports = {
   sendContactEmail

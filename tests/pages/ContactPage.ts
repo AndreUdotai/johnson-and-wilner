@@ -45,6 +45,29 @@ export class ContactPage {
       .getByText("Message sent successfully!", { exact: true });
   }
 
+  /**
+   * Stub POST /contact so Playwright never hits Nodemailer / Gmail.
+   * The UI still receives the same JSON success payload as production.
+   */
+  async mockSuccessfulSubmit(): Promise<void> {
+    await this.page.route("**/contact", async (route) => {
+      const url = new URL(route.request().url());
+      if (route.request().method() !== "POST" || url.pathname !== "/contact") {
+        await route.continue();
+        return;
+      }
+
+      await route.fulfill({
+        status: 200,
+        contentType: "application/json",
+        body: JSON.stringify({
+          success: true,
+          message: "Message sent successfully!",
+        }),
+      });
+    });
+  }
+
   async goto(): Promise<void> {
     logger.info("Navigating to /contacts");
     await this.page.goto("/contacts");
