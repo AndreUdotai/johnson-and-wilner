@@ -2024,6 +2024,19 @@ label.error {
 }
 .message-status{
 	margin-top: 30px;
+	min-height: 1.5em;
+	font-size: 14px;
+	font-weight: 600;
+	color: #1a7f37;
+}
+.message-status.is-error{
+	color: #b42318;
+}
+.appoinment-eight-main .message-status{
+	color: #7ddea0;
+}
+.appoinment-eight-main .message-status.is-error{
+	color: #ff8a80;
 }
 .contact-form .message-status{
 	min-height: 1.5em;
