@@ -2119,6 +2119,45 @@ body {
     background: #ffffff;
 }
 
+.legal-document-section {
+    padding: 70px 0 90px;
+    background: #ffffff;
+}
+
+.legal-document {
+    max-width: 820px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.legal-document .legal-updated {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #6b6b6b;
+    margin-bottom: 28px;
+}
+
+.legal-document h2 {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.legal-document ul {
+    margin: 0 0 16px 20px;
+}
+
+.legal-document li {
+    margin-bottom: 8px;
+}
+
+.legal-document a {
+    color: var(--pbmit-global-color);
+}
+
 .publication-card {
     display: flex;
     flex-direction: column;
