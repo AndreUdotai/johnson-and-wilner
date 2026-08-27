@@ -43,6 +43,18 @@ router.get('/contacts', (req, res) => {
   });
 });
 
+router.get('/privacy-policy', (req, res) => {
+  res.render('privacy-policy', { title: 'Privacy Policy' });
+});
+
+router.get('/cookie-policy', (req, res) => {
+  res.render('cookie-policy', { title: 'Cookie Policy' });
+});
+
+router.get('/terms-of-use', (req, res) => {
+  res.render('terms-of-use', { title: 'Terms of Use' });
+});
+
 // Publications Page
 // UPDATED!
 // Pass the complete publications list to the Publications page.
