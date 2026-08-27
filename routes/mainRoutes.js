@@ -15,7 +15,9 @@ router.get('/', (req, res) => {
   res.render('index', {
     title: 'Home',
     publications: publications.slice(0, 3),
-    clients
+    clients,
+    formSuccess: req.query.success === 'true',
+    formError: req.query.error === 'true'
   });
 });
 
