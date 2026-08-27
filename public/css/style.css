@@ -2143,10 +2143,10 @@ body {
 }
 .homepage-practice-areas .row {
     --bs-gutter-x: 1.75rem;
+    --bs-gutter-y: 1.75rem;
     align-items: stretch;
 }
 .homepage-practice-areas .row .row {
-    --bs-gutter-y: 1.75rem;
     width: 100%;
 }
 .homepage-practice-areas .row > [class*="col-"] {
