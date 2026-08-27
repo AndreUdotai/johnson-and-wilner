@@ -2047,6 +2047,16 @@ label.error {
 .contact-form .message-status.is-error{
 	color: #b42318;
 }
+.newsletter-feedback{
+	margin: 10px 0 0;
+	min-height: 1.25em;
+	font-size: 13px;
+	font-weight: 600;
+	color: #7ddea0;
+}
+.newsletter-feedback.is-error{
+	color: #ff8a80;
+}
 /**07 - Comment Form **/
 .form-control{
 	font-size: 12px;

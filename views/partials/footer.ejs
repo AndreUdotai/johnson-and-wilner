@@ -46,7 +46,7 @@
                         <p class="pbmit-footer-text">At the Intersection of Law, Technology, and Business</p>
                         
                         <!-- Submit newsletter subscriptions to the backend -->
-                        <form action="/subscribe" method="POST">
+                        <form class="js-newsletter-form" action="/subscribe" method="POST">
                             <div class="form-row align-items-center">
                                 <div class="col-auto">
                                     <!-- Capture the subscriber's email address for newsletter registration. -->
@@ -55,6 +55,7 @@
                                 </div>
                             </div>
                         </form>
+                        <p class="newsletter-feedback js-newsletter-feedback" role="status" aria-live="polite"></p>
                     </div>
                 </div>
 
