@@ -2137,24 +2137,35 @@ body {
     line-height: 1.8;
 }
 
-/* Homepage practice area cards: equal height within each row */
-.demo-eight .section-md.pbmit-bg-color-blackish .col-md-6 {
-    display: flex;
+/* Homepage practice area cards: equal height, no overlap, consistent gaps */
+.homepage-practice-areas > .container > .row + .row {
+    margin-top: 1.75rem;
 }
-.demo-eight .pbmit-servicebox-style-7 {
-    display: flex;
-    flex-direction: column;
+.homepage-practice-areas .row {
+    --bs-gutter-x: 1.75rem;
+    align-items: stretch;
+}
+.homepage-practice-areas .row .row {
+    --bs-gutter-y: 1.75rem;
     width: 100%;
-    height: 100%;
 }
-.demo-eight .pbmit-servicebox-style-7 .pbmit-post-item,
-.demo-eight .pbmit-servicebox-style-7 .pbmit-box-content-inner {
+.homepage-practice-areas .row > [class*="col-"] {
+    display: flex;
+}
+.homepage-practice-areas .pbmit-servicebox-style-7 {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
 }
-.demo-eight .pbmit-servicebox-style-7 .pbmit-pf-box-title {
+.homepage-practice-areas .pbmit-servicebox-style-7 .pbmit-post-item,
+.homepage-practice-areas .pbmit-servicebox-style-7 .pbmit-box-content-inner {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.homepage-practice-areas .pbmit-servicebox-style-7 .pbmit-pf-box-title {
     margin-top: auto;
 }
 
