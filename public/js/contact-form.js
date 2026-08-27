@@ -1,16 +1,22 @@
 (function () {
-  function initContactForm() {
-    const form = document.querySelector(".contact-form form");
-    const feedback = document.querySelector(".contact-form .message-status");
-
-    if (!form || !feedback) {
+  function bindContactForm(form) {
+    if (form.dataset.ajaxBound === "true") {
       return;
     }
+
+    const feedback = form.nextElementSibling;
+    if (!feedback || !feedback.classList.contains("message-status")) {
+      return;
+    }
+
+    form.dataset.ajaxBound = "true";
 
     form.addEventListener("submit", async function (event) {
       event.preventDefault();
 
-      const submitButton = form.querySelector('button[type="submit"]');
+      const submitButton = form.querySelector(
+        'button[type="submit"], input[type="submit"]',
+      );
       feedback.textContent = "";
       feedback.classList.remove("is-error");
 
@@ -52,9 +58,15 @@
     });
   }
 
+  function initContactForms() {
+    document
+      .querySelectorAll('form[action="/contact"]')
+      .forEach(bindContactForm);
+  }
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initContactForm);
+    document.addEventListener("DOMContentLoaded", initContactForms);
   } else {
-    initContactForm();
+    initContactForms();
   }
 })();

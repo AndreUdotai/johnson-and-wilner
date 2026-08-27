@@ -15,7 +15,9 @@ router.get('/', (req, res) => {
   res.render('index', {
     title: 'Home',
     publications: publications.slice(0, 3),
-    clients
+    clients,
+    formSuccess: req.query.success === 'true',
+    formError: req.query.error === 'true'
   });
 });
 
@@ -39,6 +41,18 @@ router.get('/contacts', (req, res) => {
     formSuccess: req.query.success === 'true',
     formError: req.query.error === 'true'
   });
+});
+
+router.get('/privacy-policy', (req, res) => {
+  res.render('privacy-policy', { title: 'Privacy Policy' });
+});
+
+router.get('/cookie-policy', (req, res) => {
+  res.render('cookie-policy', { title: 'Cookie Policy' });
+});
+
+router.get('/terms-of-use', (req, res) => {
+  res.render('terms-of-use', { title: 'Terms of Use' });
 });
 
 // Publications Page

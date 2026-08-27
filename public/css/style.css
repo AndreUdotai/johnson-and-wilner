@@ -2024,6 +2024,19 @@ label.error {
 }
 .message-status{
 	margin-top: 30px;
+	min-height: 1.5em;
+	font-size: 14px;
+	font-weight: 600;
+	color: #1a7f37;
+}
+.message-status.is-error{
+	color: #b42318;
+}
+.appoinment-eight-main .message-status{
+	color: #7ddea0;
+}
+.appoinment-eight-main .message-status.is-error{
+	color: #ff8a80;
 }
 .contact-form .message-status{
 	min-height: 1.5em;
@@ -2033,6 +2046,16 @@ label.error {
 }
 .contact-form .message-status.is-error{
 	color: #b42318;
+}
+.newsletter-feedback{
+	margin: 10px 0 0;
+	min-height: 1.25em;
+	font-size: 13px;
+	font-weight: 600;
+	color: #7ddea0;
+}
+.newsletter-feedback.is-error{
+	color: #ff8a80;
 }
 /**07 - Comment Form **/
 .form-control{
@@ -2138,6 +2161,45 @@ body {
 .publications-section {
     padding: 80px 0;
     background: #ffffff;
+}
+
+.legal-document-section {
+    padding: 70px 0 90px;
+    background: #ffffff;
+}
+
+.legal-document {
+    max-width: 820px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.legal-document .legal-updated {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #6b6b6b;
+    margin-bottom: 28px;
+}
+
+.legal-document h2 {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.legal-document ul {
+    margin: 0 0 16px 20px;
+}
+
+.legal-document li {
+    margin-bottom: 8px;
+}
+
+.legal-document a {
+    color: var(--pbmit-global-color);
 }
 
 .publication-card {
