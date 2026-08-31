@@ -13,6 +13,7 @@
     06 - Contacts
     07 - Comment Form
     08 - Publications
+	09 - Team Widgets
 ******************************/
 
 /*----------------------------------------*/
@@ -2369,5 +2370,89 @@ body {
     .trusted-client-logo img {
         max-height: 200px;
         max-width: 150px;
+    }
+}
+
+/***************************************/
+/***************************************/
+/* Team Widget */
+/***************************************/
+/***************************************/
+
+.team-widget-card{
+    display:block;
+    text-decoration:none;
+    background:#fff;
+    overflow:hidden;
+    border-radius:8px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.team-widget-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.team-widget-image{
+    overflow:hidden;
+}
+
+.team-widget-image img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.team-widget-card:hover img{
+    transform:scale(1.05);
+}
+
+.team-widget-content{
+    padding:25px;
+    text-align:center;
+}
+
+.team-widget-content h4{
+    color:var(--pbmit-secondary-color);
+    margin-bottom:8px;
+}
+
+.team-widget-content p{
+    color:#777;
+    margin:0;
+}
+
+/* Team Widget Grid */
+.team-widget-grid{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:25px;
+}
+
+.team-widget-item{
+    width:100%;
+}
+
+/* Laptop */
+@media(max-width:1200px){
+    .team-widget-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+
+/* Tablet */
+@media(max-width:992px){
+    .team-widget-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Mobile */
+@media(max-width:576px){
+    .team-widget-grid{
+        grid-template-columns:1fr;
     }
 }
