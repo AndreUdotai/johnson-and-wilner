@@ -45,6 +45,42 @@
             </div>
         </section>
 
+        <!-- ===========================================================
+                Team Widget Displays four featured team members.
+        =========================================================== -->
+        <section class="section-md">
+            <div class="container">
+
+                <div class="pbmit-heading-subheading text-center">
+                    <h4 class="pbmit-subtitle">OUR TEAM</h4>
+                    <h2 class="pbmit-title">Global expertise in diverse areas of law</h2>
+                </div>
+
+                <div class="team-widget-grid">
+                    ${teamMembers.map(member => `
+                        <div class="team-widget-item">
+                            <a href="/attorney/${member.slug}" class="team-widget-card">
+                                <div class="team-widget-image">
+                                    <img
+                                        src="${member.image}"
+                                        alt="${member.name}"
+                                        class="img-fluid">
+                                </div>
+
+                                <div class="team-widget-content">
+                                    <h4>${member.name}</h4>
+                                    <p>${member.role}</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    `).join('')}
+
+                </div>
+
+            </div>
+        </section>
+
         <!-- Publications Start -->
         <!-- Practice Areas page Publications section showcasing the latest publications. -->
         <section class="home-publications-section">
