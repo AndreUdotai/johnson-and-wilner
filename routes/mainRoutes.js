@@ -1,5 +1,7 @@
 const path = require('path');
 
+// Load team members for the Team Widget.
+const teamMembers = require('../public/js/data/team');
 // Load shared client logo data for the homepage trusted brands section.
 const clients = require('../public/js/data/clients');
 // Load shared practice area data for dynamic rendering.
@@ -26,12 +28,14 @@ router.get('/about-us', (req, res) => {
 });
 
 // UPDATED!
-// Pass practice areas and recent publications to the Practice Areas page.
+// Pass practice areas, publications and featured team members.
 router.get('/practice-areas', (req, res) => {
   res.render('practice-areas', {
     title: 'Practice Areas',
     practiceAreas,
-    publications: publications.slice(0, 3)
+    publications: publications.slice(0, 3),
+    // Display only the firm's main partners.
+    teamMembers: teamMembers.filter(member => member.mainPartner === true)
   });
 });
 
@@ -57,11 +61,14 @@ router.get('/terms-of-use', (req, res) => {
 
 // Publications Page
 // UPDATED!
-// Pass the complete publications list to the Publications page.
+// Pass publications and the firm's main partners to the Publications page.
 router.get('/publications', (req, res) => {
   res.render('publications', {
     title: 'Publications',
-    publications
+    publications,
+
+    // Display only the firm's main partners.
+    teamMembers: teamMembers.filter(member => member.mainPartner === true)
   });
 });
 
@@ -89,19 +96,31 @@ router.get('/practice-area/:id', (req, res) => {
   });
 });
 
+// UPDATED!
 // Individual Attorney Profile
 router.get('/attorney/:slug', (req, res) => {
-    const slug = req.params.slug;
-    const dataModule = require('../public/js/data/team.js');
-    const teamMembers = dataModule.default || dataModule;
-    
-    const attorney = teamMembers.find(member => member.slug === slug);
+
+    const attorney = teamMembers.find(
+        member => member.slug === req.params.slug
+    );
 
     if (!attorney) {
         return res.status(404).render('404');
     }
 
-    res.render('attorney', { attorney });
+    // Display only other main partners, excluding the current attorney.
+    const relatedTeamMembers = teamMembers
+        .filter(member =>
+            member.mainPartner &&
+            member.slug !== attorney.slug
+        );
+
+    // Render the attorney page.
+    res.render('attorney', {
+        attorney,
+        relatedTeamMembers
+    });
+
 });
 
 // Import and route contact form submissions through the contact email service.
